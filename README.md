@@ -1,7 +1,7 @@
 # terraform-aws-tgw-ipsec-bgp-to-avx-transit
 This module creates IPSec/BGP connections between AWS TGW and Aviatrix Transit GW
 
-[![diagram](diagram.png "diagram")](https://github.com/jye-aviatrix/terraform-aws-tgw-ipsec-bgp-to-avx-transit/blob/master/diagram.png)
+[![diagram](https://raw.githubusercontent.com/jye-aviatrix/terraform-aws-tgw-ipsec-bgp-to-avx-transit/master/diagram.png)](https://github.com/jye-aviatrix/terraform-aws-tgw-ipsec-bgp-to-avx-transit/blob/master/diagram.png)
 
 From AWS TGW side, two VPN connections will be created, shown as 
 - VPN Connection 1 ({ConnectionName}-Primary)
