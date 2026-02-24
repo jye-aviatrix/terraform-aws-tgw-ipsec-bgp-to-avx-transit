@@ -4,8 +4,8 @@ This module creates IPSec/BGP connections between AWS TGW and Aviatrix Transit G
 ![diagram](diagram.png "diagram")
 
 From AWS TGW side, two VPN connections will be created, shown as 
-- VPN Connection 1 (<ConnectionName>-Primary)
-- VPN Connection 2 (<ConnectionName>-Ha)
+- VPN Connection 1 ({ConnectionName}-Primary)
+- VPN Connection 2 ({ConnectionName}-Ha)
 
 Each VPN Connection have two tunnels, shown as:
 - VPN Connection 1
@@ -16,12 +16,14 @@ Each VPN Connection have two tunnels, shown as:
   - Tunnel-2 <span style="color:cyan">Tunnel to Avx HA GW</span>
 
 On Aviatrix side, two connections will be created:
-    - <ConnectionName>-Tunnel1
-    - <ConnectionName>-Tunnel2
+  - {ConnectionName}-Tunnel1
+  - {ConnectionName}-Tunnel2
+
 Each connection will connect to TGW as this methods
-    - <ConnectionName>-Tunnel1
-      - <span style="color:red">Towards tunnel1 endpoint in <ConnectionName>-Primary </span>
-      -  <span style="color:red">Towards tunnel1 endpoint in <ConnectionName>-Ha </span>
-    - <ConnectionName>-Tunnel2
-      - <span style="color:cyan">Towards tunnel2 endpoint in <ConnectionName>-Primary </span>
-      - <span style="color:cyan">Towards tunnel2 endpoint in <ConnectionName>-Ha </span>
+
+  - {ConnectionName}-Tunnel1
+    - <span style="color:red">Towards tunnel1 endpoint in {ConnectionName}-Primary </span>
+    -  <span style="color:red">Towards tunnel1 endpoint in {ConnectionName}-Ha </span>
+  - {ConnectionName}-Tunnel2
+    - <span style="color:cyan">Towards tunnel2 endpoint in {ConnectionName}-Primary </span>
+    - <span style="color:cyan">Towards tunnel2 endpoint in {ConnectionName}-Ha </span>
